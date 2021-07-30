@@ -1,7 +1,7 @@
 # Excel Dosyasını Xml formatına dönüştürür. 
 - İki form yer alıyor. İlk açılan formda sabit excelden otomatik olarak veriyi çekiyor. 
 - Timer ile zamanlama ayarlanıyor. 
-- Belirtilen sürede bir içerdeki XML'i sabit konumda güncelliyor. 
+- Belirtilen sürede bir (Örneğin 10 dakikada bir) içerdeki XML'i sabit konumda güncelliyor. 
 - Ek formdan yeni belge yükleme işlemi yapılabiliyor. 
 - Yeni yüklenen belge dönüştürüldükten sonra, kaydedileceği yer ve isim kullanıcı tarafından belirleniyor.
 - Ek formdan ana forma geri dönüş mümkün.
