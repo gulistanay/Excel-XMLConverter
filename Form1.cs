@@ -24,12 +24,12 @@ namespace FormXmlKullanimi
         private DataTable GetDataTableFromDGV(DataGridView dgv)
         {
             var dt = new DataTable();
-            foreach (DataGridViewColumn column in dgv.Columns)
+            foreach (DataGridViewColumn column in dgv.Columns) //DataTable ile Data Grid View'e excel verileri yerleştiriliyor.
             {
                 if (column.Visible)
                 {
 
-                    dt.Columns.Add(column.HeaderText);
+                    dt.Columns.Add(column.HeaderText);  //Sütun başlıkları dahil ediliyor.
                 }
             }
             object[] cellValues = new object[dgv.Columns.Count];
@@ -48,7 +48,7 @@ namespace FormXmlKullanimi
         {
             try
             {
-                FileStream stream = File.Open(@"D:\\urun-takip.xlsx", FileMode.Open, FileAccess.Read);
+                FileStream stream = File.Open(@"D:\\urun-takip.xlsx", FileMode.Open, FileAccess.Read);  //Sabit excel dosyası belirtilen konumdan açılıyor
 
                 IExcelDataReader excelReader = ExcelReaderFactory.CreateReader(stream);
 
@@ -67,10 +67,10 @@ namespace FormXmlKullanimi
 
             try
             {
-                DataTable dt = GetDataTableFromDGV(dataGridView1);
-                DataSet ds = new DataSet();
+                DataTable dt = GetDataTableFromDGV(dataGridView1);  //GetDataTableFromDGV fonksiyonu çağrılarak, datagridviewdeki veriler 
+                DataSet ds = new DataSet();                         //Xml dosyasına yazılıyor.
                 ds.Tables.Add(dt);
-                ds.WriteXml(File.OpenWrite(@"D:\XMLDosyasi.xml"));
+                ds.WriteXml(File.OpenWrite(@"D:\XMLDosyasi.xml"));  //Sabit konum ve sabit dosya ismi belirtilerek; belge xml formatında kaydediliyor.
                 //MessageBox.Show("Kaydedildi");
                 this.Hide();
             }
@@ -110,8 +110,8 @@ namespace FormXmlKullanimi
 
             long ms = Convert.ToInt64(timer1.Interval);
             TimeSpan t = TimeSpan.FromMilliseconds(ms);
-            string minute = Convert.ToString(t.Minutes);
-            label1.Text = string.Format(minute);
+            string minute = Convert.ToString(t.Minutes);        //Dakika dakika artış sağlanıyor.
+            label1.Text = string.Format(minute);                //Label da girilen süre dakika cinsinden gösteriliyor.
             int deger = Convert.ToInt32(label1.Text);
         }
 
@@ -121,18 +121,18 @@ namespace FormXmlKullanimi
 
             numericUpDown1.Minimum = 60000;  //10000 : 10 sn
 
-            timer1.Interval = (int)numericUpDown1.Value;
+            timer1.Interval = (int)numericUpDown1.Value;   //Timer'ın interval değeri numeric up downdan çekiliyor.
            
         }
 
         private void buttonTimer_Click(object sender, EventArgs e)
         {
-            timer1.Stop();  
+            timer1.Stop();  //"Timer durdur" butonu.
         }
      
         private void buttonSifirla_Click(object sender, EventArgs e)
         {
-            label1.Text = "0";
+            label1.Text = "0";  
         }
     }
 }
