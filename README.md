@@ -6,8 +6,8 @@
 - İkinci formdan yeni belge yükleme işlemi yapılabiliyor. 
 - Yeni yüklenen belge dönüştürüldükten sonra, kaydedileceği yer ve isim kullanıcı tarafından belirleniyor.
 - İkinci formdan ana forma geri dönüş mümkün.
-![Ekran Alıntısı](https://user-images.githubusercontent.com/53774762/127014948-88870adb-90b6-454a-ab84-a1d1ecbeaea7.JPG)
-![Ekran Alıntısı2](https://user-images.githubusercontent.com/53774762/127014960-3e71235c-18ca-4a66-aae2-d160075061a7.JPG)
+![image](https://user-images.githubusercontent.com/53774762/127629065-04486ecf-1afb-424a-b976-7c2616cfca95.png)
+![image](https://user-images.githubusercontent.com/53774762/127629152-66e01a7b-8b3a-4998-a340-d36d58371b59.png)
 ![Ekran Alıntısı3](https://user-images.githubusercontent.com/53774762/127014968-3009f4f7-97a8-464e-8980-b4b1511bba9e.JPG)
 ![Ekran Alıntısı4](https://user-images.githubusercontent.com/53774762/127014983-2733a656-6cc2-48b9-8240-f539075fd091.JPG)
 ![Ekran Alıntısı5](https://user-images.githubusercontent.com/53774762/127014994-7e63299c-7531-4b37-864b-01b7a37960fd.JPG)
