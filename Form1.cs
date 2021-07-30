@@ -128,7 +128,7 @@ namespace FormXmlKullanimi
         private void buttonTimer_Click(object sender, EventArgs e)
         {
             timer1.Stop();
-            label1.Text = "0";
+           
         }       
     }
 }
