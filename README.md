@@ -2,9 +2,10 @@
 - İki form yer alıyor. İlk açılan formda sabit excelden otomatik olarak veriyi çekiyor. 
 - Timer ile zamanlama ayarlanıyor. 
 - Belirtilen sürede bir (Örneğin 10 dakikada bir) içerdeki XML'i sabit konumda güncelliyor. 
-- Ek formdan yeni belge yükleme işlemi yapılabiliyor. 
+- "Yeni Dosya Yükle" butonundan ikinci bir forma geçiş yapılıyor.
+- İkinci formdan yeni belge yükleme işlemi yapılabiliyor. 
 - Yeni yüklenen belge dönüştürüldükten sonra, kaydedileceği yer ve isim kullanıcı tarafından belirleniyor.
-- Ek formdan ana forma geri dönüş mümkün.
+- İkinci formdan ana forma geri dönüş mümkün.
 ![Ekran Alıntısı](https://user-images.githubusercontent.com/53774762/127014948-88870adb-90b6-454a-ab84-a1d1ecbeaea7.JPG)
 ![Ekran Alıntısı2](https://user-images.githubusercontent.com/53774762/127014960-3e71235c-18ca-4a66-aae2-d160075061a7.JPG)
 ![Ekran Alıntısı3](https://user-images.githubusercontent.com/53774762/127014968-3009f4f7-97a8-464e-8980-b4b1511bba9e.JPG)
